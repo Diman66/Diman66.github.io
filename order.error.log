@@ -1,0 +1,61 @@
+2022.11.22 17:40:42 Success: Order is accepted. 
+Order: array (
+  'countryCode' => 'IT',
+  'comment' => '',
+  'createdAt' => '2022-11-22 17:40:41',
+  'ip' => '127.0.0.1',
+  'landingUrl' => '',
+  'name' => 'test',
+  'offerId' => '9685',
+  'phone' => '39 0000000000',
+  'referrer' => 'http://localhost/web/',
+  'streamCode' => '',
+  'sub1' => '',
+  'sub2' => '',
+  'sub3' => '',
+  'sub4' => '',
+  'userAgent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+)
+Response: array (
+  'status' => 'error',
+  'code' => 400,
+  'message' => 'Заказ некорректен',
+  'errors' => 
+  array (
+    'landingUrl' => 
+    array (
+      0 => 'Необходимо заполнить поле «Landing Url».',
+    ),
+  ),
+)
+#0 {main}2022.11.22 17:45:58 Success: Order is accepted. 
+Order: array (
+  'countryCode' => 'IT',
+  'comment' => '',
+  'createdAt' => '2022-11-22 17:45:58',
+  'ip' => '127.0.0.1',
+  'landingUrl' => '',
+  'name' => 'test',
+  'offerId' => '9685',
+  'phone' => '39 0000000000',
+  'referrer' => 'http://localhost/web/',
+  'streamCode' => '',
+  'sub1' => '',
+  'sub2' => '',
+  'sub3' => '',
+  'sub4' => '',
+  'userAgent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+)
+Response: array (
+  'status' => 'error',
+  'code' => 400,
+  'message' => 'Заказ некорректен',
+  'errors' => 
+  array (
+    'landingUrl' => 
+    array (
+      0 => 'Необходимо заполнить поле «Landing Url».',
+    ),
+  ),
+)
+#0 {main}
