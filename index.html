@@ -1,113 +1,462 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-bc8995ff.js"></script>
-    <link rel="stylesheet" href="/assets/index-a4b72de9.css">
-  </head>
-  <body>
-      <div class="container">
-        <section class="header">
-          <div class="header__logo"></div>
-          <div class="header__box">
-            <div class="header__product">
-              <img src="/assets/boxes-a9feae9f.png" alt="">
-            </div>
-            <div class="header__title">КОЛЛЕКЦИОННЫЕ ИЗДАНИЯ</div>
-            <div class="header__subtitle">Побеждайте легко, побеждайте стильно с новыми коллекционными изданиями «Аллодов Онлайн»!</div>
-            
-          </div>
-          <div class="header__glow"></div>
-          <div class="header__image">
-            <img src="/assets/MafiaCostume_2022 2-65720196.png" alt="">
-            <img src="/assets/MafiaCostume_2022 3-853b3c34.png" alt="">
-          </div>
-        </section>
-        <section class="collection">
-          <div class="collection__wrapper">
-            <div class="collection__main-image">
-              <img src="/assets/Vito_1-cb7e81fd.png" alt="">
-            </div>
-            <div class="collection__list">
-              <div class="collection__title">НАБОР «ПОСЫЛКА С КОНТРАБАНДОЙ»</div>
-              <table>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th>Бесплатные сервера</th>
-                  <th>Подписочный сервер</th>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/Часы_copy_1-0d207ffc.png" alt="">
-                  </td>
-                  <td>Игровое время</td>
-                  <td>-</td>
-                  <td>30 дней</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/ТУЛБОКС_1-cb900042.png" alt="">
-                  </td>
-                  <td>Запечатанный набор<br />инструментов</td>
-                  <td>1</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/хрупкая_1-9a9c10f1.png" alt="">
-                  </td>
-                  <td>Хрупкая чистая руна<br />10-й ступени</td>
-                  <td>1</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/большой символ_1-d97aa2e2.png" alt="">
-                  </td>
-                  <td>Большой символ<br />изобилия творца</td>
-                  <td>10</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/мана_1-ec8f6797.png" alt="">
-                  </td>
-                  <td>Мана-батарея</td>
-                  <td>-</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/модуль_1-7d66a026.png" alt="">
-                  </td>
-                  <td>Модуль памяти</td>
-                  <td>-</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="/assets/вито_1-9bc80572.png" alt="">
-                  </td>
-                  <td>Помощник Вито </td>
-                  <td>1</td>
-                  <td>1</td>
-                </tr>
-              </table>
-              <div class="collection__box">
-                <img src="/assets/box-090fd22a.png" alt="">
-                <div class="collection__price">
-                  <span>399 ₽</span>
-                  <button class="collection__btn-buy">ПРИОБРЕСТИ</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udpost</title>
+  <script type="module" crossorigin src="/assets/index-ed2c3030.js"></script>
+  <link rel="stylesheet" href="/assets/index-fb0c2f6e.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__logo"><img src="/assets/Logo-2a55a65f.svg" alt=""></div>
+                <nav class="header__list">
+                    <ul class="main-menu">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#conditions">Terms & Conditions</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header__lang">
+                    <div class="header__lang-current">
+                        <div class="header__lang-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="url(#paint0_linear_105_34)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_105_34" x1="16" y1="8.5" x2="0.266366" y2="8.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>English</span>
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector 1" d="M1 1.375L5.375 7.625L9.75 1.375" stroke="url(#paint0_linear_105_36)" stroke-width="2"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_105_36" x1="9.75" y1="4.5" x2="1.14567" y2="4.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>     
+                        </div>
+                    </div>
+                    <div class="header__lang-selection">
+                        <div class="header__lang-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="url(#paint0_linear_105_34)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_105_34" x1="16" y1="8.5" x2="0.266366" y2="8.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Deutsch</span>
+                        </div>
+                        <div class="header__lang-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="url(#paint0_linear_105_34)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_105_34" x1="16" y1="8.5" x2="0.266366" y2="8.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Русский</span>  
+                        </div>
+                        <div class="header__lang-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="url(#paint0_linear_105_34)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_105_34" x1="16" y1="8.5" x2="0.266366" y2="8.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>O'zbekcha</span>
+                        </div>
+                    </div>
+                                       
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+                <div class="btn-order">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                        <path d="M16 13.5002C16 13.838 15.8133 14.1313 15.5289 14.2824L8.50667 18.2291C8.36444 18.3358 8.18667 18.3891 8 18.3891C7.81333 18.3891 7.63556 18.3358 7.49333 18.2291L0.471111 14.2824C0.186667 14.1313 0 13.838 0 13.5002V5.50022C0 5.16244 0.186667 4.86911 0.471111 4.718L7.49333 0.771328C7.63556 0.664662 7.81333 0.611328 8 0.611328C8.18667 0.611328 8.36444 0.664662 8.50667 0.771328L15.5289 4.718C15.8133 4.86911 16 5.16244 16 5.50022V13.5002ZM8 2.52244L6.32 3.47355L11.5556 6.48688L13.2978 5.50022L8 2.52244ZM2.70222 5.50022L8 8.478L9.74222 7.50022L4.51556 4.47799L2.70222 5.50022ZM1.77778 12.9758L7.11111 15.9802V10.0158L1.77778 7.02022V12.9758ZM14.2222 12.9758V7.02022L8.88889 10.0158V15.9802L14.2222 12.9758Z" fill="white"/>
+                    </svg>
+                    <span>Place first order</span>
+                </div>
     
-  </body>
+            </div>
+            <div class="header__wrapper">
+                <div class="header__descr">
+                    <div class="header__title">Safely. Fast. Cheap</div>
+                    <div class="header__subtitle">UPD Logistics is a company that focuses on delivering <br>
+                        both parcels and cargo between <span>Uzbekistan</span> and <span>Europe</span>.</div>
+                    <div class="header__btn">
+                        <button class="btn-order">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                <path d="M16 13.5002C16 13.838 15.8133 14.1313 15.5289 14.2824L8.50667 18.2291C8.36444 18.3358 8.18667 18.3891 8 18.3891C7.81333 18.3891 7.63556 18.3358 7.49333 18.2291L0.471111 14.2824C0.186667 14.1313 0 13.838 0 13.5002V5.50022C0 5.16244 0.186667 4.86911 0.471111 4.718L7.49333 0.771328C7.63556 0.664662 7.81333 0.611328 8 0.611328C8.18667 0.611328 8.36444 0.664662 8.50667 0.771328L15.5289 4.718C15.8133 4.86911 16 5.16244 16 5.50022V13.5002ZM8 2.52244L6.32 3.47355L11.5556 6.48688L13.2978 5.50022L8 2.52244ZM2.70222 5.50022L8 8.478L9.74222 7.50022L4.51556 4.47799L2.70222 5.50022ZM1.77778 12.9758L7.11111 15.9802V10.0158L1.77778 7.02022V12.9758ZM14.2222 12.9758V7.02022L8.88889 10.0158V15.9802L14.2222 12.9758Z" fill="white"/>
+                            </svg>
+                            <span>Place first order</span>
+                        </button>
+                        <button class="header__btn-contacts">Get our contacts</button>
+                    </div>
+                </div>
+                <div id="slider" class="slider">
+                    <button class="prev"></button>
+                    <div class="img">
+                        <div class="img-line">
+                            <img src="/assets/11_Ford-Transit-Box-Truck-Mockup_Back-Left-9625a942.png" alt="">
+                            <img src="/assets/11_Ford-Transit-Box-Truck-Mockup_Back-Left-9625a942.png" alt="">
+                            <img src="/assets/11_Ford-Transit-Box-Truck-Mockup_Back-Left-9625a942.png" alt="">
+                            <img src="/assets/11_Ford-Transit-Box-Truck-Mockup_Back-Left-9625a942.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="dotted">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <button class="next"></button>
+                </div>
+                
+            </div> 
+        </div>
+    </header>    
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="title">Frequently asked questions</div>
+            <div class="faq__questions">
+                <details class="faq__question">
+                    <summary>What will happen if my parcel will get lost?</summary>
+                    <p>What will happen if my parcel will get lost?
+                        Insurance company covers full or partial amount of the cost for the lost parcel
+                        (it can be a box, luggage bag etc). </p>
+                </details>
+                <details class="faq__question">
+                    <summary>How do I package my parcel?</summary>
+                    <p>If you have chosen to package your parcel yourself then you have to make sure that you will apply following criteria: </p>
+                    <p> 1. Your parcel must be sealed properly with tape, cling film or boxed and taped. 
+                        It must be stable and should not get ripped while transportation.</p>
+                    <p>2. If you parcel is fragile item and you have chosen to pack it your self then it must be covered with bubble wrap and placed in to the crafted or wooden box. Fragile tape mast be applied, UPD logistics does not take responsibility of broken item.</p>
+                    <p>3. Each of your parcel must be covered and labelled with your unique number which shown on your declaration form.</p>
+                </details>
+                <details class="faq__question">
+                    <summary>Do you offer safe packaging for the fragile goods?</summary>
+                    <p>Yes we do offer safe packaging which keeps your fragile item safe and secure. 
+                        Extra cost will be applied for special packaging of your fragile goods. you can find 
+                        the UDP Logistics fees by clicking here</p>
+                </details>
+                <details class="faq__question">
+                    <summary>How do I book a collection?</summary>
+                    <p>You can book a collection or request a quote by: <br>
+                        1. Book a collection through our website by clicking here
+                        2. By phone. call now +4915110009829 or  +998883999985
+                        Or just send and email with your request to mail@udpost.uz</p>
+                </details>
+                <details class="faq__question">
+                    <summary>How much is for collection and what areas do you cover 
+                        for the collection?</summary>
+                    <p>UDP logistics collects your parcels from all over the Germany. 
+                        Please type in your full post code to find the collection fee from your area</p>
+                </details>
+                <details class="faq__question">
+                    <summary>Can I deliver my parcel by myself to UDP Logistics?</summary>
+                    <p>Yes you can deliver your parcel to us from 14:00 to 18:00, 
+                        Please call or email us, so we will be ready to meet and greet you
+                        Deliver you parcel yourself to this address:</p>
+                        
+                    <p>Arch 294 Jewell Street 
+                        DE 59192, Am Schlagbaum 28
+                        Bergkamen, Germany</p>
+                        
+                    <p>Send your parcel to our warehouse
+                        DE 59192, Am Schlagbaum 28
+                        Bergkamen, Germany</p>
+                </details>
+                <details class="faq__question">
+                    <summary>Can I order shopping direct to UDP Logistics Storage?</summary>
+                    <p>Yes, you can.
+                        Please order your item to our storage with reception working hours 14:00 to 18:00</p>
+                        
+                        <p>DE 59192, Am Schlagbaum 28
+                        Bergkamen, Germany</p>
+                        
+                        <p>Please make sure that you will order your item under your name</p>
+                </details>
+                <details class="faq__question">
+                    <summary>When is the next shipment to Uzbekistan?</summary>
+                    <p>We do shipment every week on tuesday. last day of registering your parcel is 
+                        on Monday before 5PM. last day of collection is on Sunday before 00:00</p>
+                </details>
+                <details class="faq__question">
+                    <summary>Can I send an Important Documents?</summary>
+                    <p>Yes, you can send any type of document (exception is religion related or any documentswhich has restricted by Germany and Uzbekistan government). We offer postage oncea week.</p>
+                </details>
+                <details class="faq__question">
+                    <summary>Cargo from Uzbekistan to Germany?</summary>
+                    <p>We don't offer cargo from Uzbeksitan to Germany for now.</p>
+                </details>
+                <details class="faq__question">
+                    <summary>What is restricted to send?</summary>
+                    <p>See in <u>terms and conditions</u></p>
+                </details>
+            </div>
+            <button class="faq__show-more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7362 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C8.68678 20 7.38642 19.7413 6.17317 19.2388C4.95991 18.7362 3.85752 17.9997 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 8.5C10.3978 8.5 10.7794 8.65804 11.0607 8.93934C11.342 9.22064 11.5 9.60218 11.5 10C11.5 10.3978 11.342 10.7794 11.0607 11.0607C10.7794 11.342 10.3978 11.5 10 11.5C9.60218 11.5 9.22064 11.342 8.93934 11.0607C8.65804 10.7794 8.5 10.3978 8.5 10C8.5 9.60218 8.65804 9.22064 8.93934 8.93934C9.22064 8.65804 9.60218 8.5 10 8.5ZM5.5 8.5C5.89782 8.5 6.27936 8.65804 6.56066 8.93934C6.84196 9.22064 7 9.60218 7 10C7 10.3978 6.84196 10.7794 6.56066 11.0607C6.27936 11.342 5.89782 11.5 5.5 11.5C5.10218 11.5 4.72064 11.342 4.43934 11.0607C4.15804 10.7794 4 10.3978 4 10C4 9.60218 4.15804 9.22064 4.43934 8.93934C4.72064 8.65804 5.10218 8.5 5.5 8.5ZM14.5 8.5C14.8978 8.5 15.2794 8.65804 15.5607 8.93934C15.842 9.22064 16 9.60218 16 10C16 10.3978 15.842 10.7794 15.5607 11.0607C15.2794 11.342 14.8978 11.5 14.5 11.5C14.1022 11.5 13.7206 11.342 13.4393 11.0607C13.158 10.7794 13 10.3978 13 10C13 9.60218 13.158 9.22064 13.4393 8.93934C13.7206 8.65804 14.1022 8.5 14.5 8.5Z" fill="black"/>
+                </svg>
+                <span>Show more</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="conditions" class="conditions">
+        <div class="container">
+            <div class="title title_primary">Terms & Conditions</div>
+            <div class="conditions__restrict">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M9 13H11V15H9V13ZM9 5H11V11H9V5ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18Z" fill="#222222"/>
+                </svg>
+                <span>What is restricted to send?</span>
+            </div>
+            <div class="conditions__notice">Please note that all shipments of personal goods MUST NOT contain any of the following items without being declared to UDP Logistics and pre-arrangements being made to transport them safely and in accordance with IATA/ICAO dangerous goods regulations.</div>
+            <div class="conditions__row">
+                <div><p>Lithium Ion Batteries and items containing lithium ion batteries <br> <span>(e.g. Mobile Phones/Laptop Computers/Cordless power tools)</span></p></div>
+                <div><p>Petrol or diesel powered equipment with residue of fuel <br> <span>(e.g. generators, chainsaws etc.) -Aerosols ( e.g. deodorant sprays)</span></p></div>
+            </div>
+            <div class="conditions__row">
+                <div><p>Flammable liquids <br>
+                    <span>(e.g. perfumes/paint)</span></p>
+                </div>
+                <div><p>Flammable solids <br>
+                    <span>(e.g. matches)</span></p>
+                </div>
+                <div><p>Flammable gases <br>
+                    <span>(e.g. lighter fuel)</span></p>
+                </div>
+                <div><p>Corrosive Material <br>
+                    <span>(e.g. acid/car batteries)</span></p>
+                </div>
+            </div>
+            <div class="conditions__row">
+                <div><p>Explosive materials <br> 
+                    <span>(e.g. fireworks)</span></p>
+                </div>
+                <div><p>Infectious <br> substances</p></div>
+                <div><p>Magnetise <br> material</p></div>
+                <div><p>Radioactive <br> material</p></div>
+            </div>
+            <div class="conditions__notice">It is an offence by international law to ship the above goods without being correctly packed, marked and declared to the airline and offenders may be subject to heavy fines. Any shipments containing the above without being declared will not be despatched.</div>
+            <div class="conditions__row">
+                <div><p>Firearms</p></div>
+                <div><p>Live animals</p></div>
+                <div><p>Pornography</p></div>
+                <div><p>Controlled Drugs</p></div>
+                <div><p>Anything made of endangered species<br> 
+                    <span>(e.g. Ivory)</span></p>
+                </div>
+                <div><p>Fresh food/meat</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container_primary">
+            <div class="container">
+                <div class="title">Contacts</div>
+            </div>
+            <div class="container">
+                <div class="contacts__item">
+                    <div class="contacts__data">
+                        <div class="contacts__branch ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none">
+                                <path d="M8 5.21415C8.75776 5.21415 9.48449 5.51517 10.0203 6.05098C10.5561 6.5868 10.8571 7.31353 10.8571 8.07129C10.8571 8.4465 10.7832 8.81803 10.6397 9.16467C10.4961 9.51132 10.2856 9.82628 10.0203 10.0916C9.755 10.3569 9.44003 10.5674 9.09338 10.7109C8.74674 10.8545 8.37521 10.9284 8 10.9284C7.24224 10.9284 6.51551 10.6274 5.9797 10.0916C5.44388 9.55578 5.14286 8.82905 5.14286 8.07129C5.14286 7.31353 5.44388 6.5868 5.9797 6.05098C6.51551 5.51517 7.24224 5.21415 8 5.21415ZM8 0.0712891C10.1217 0.0712891 12.1566 0.914144 13.6569 2.41443C15.1571 3.91473 16 5.94956 16 8.07129C16 14.0713 8 22.9284 8 22.9284C8 22.9284 0 14.0713 0 8.07129C0 5.94956 0.842855 3.91473 2.34315 2.41443C3.84344 0.914144 5.87827 0.0712891 8 0.0712891ZM8 2.357C6.48448 2.357 5.03103 2.95904 3.95939 4.03068C2.88775 5.10232 2.28571 6.55577 2.28571 8.07129C2.28571 9.21415 2.28571 11.4999 8 19.1684C13.7143 11.4999 13.7143 9.21415 13.7143 8.07129C13.7143 6.55577 13.1122 5.10232 12.0406 4.03068C10.969 2.95904 9.51552 2.357 8 2.357Z" fill="white"/>
+                            </svg>
+                            <span>Samarkand branch</span>
+                        </div>
+                        <div class="contacts__address">
+                            <address>“Deutsch UDP Logistics” MChJ
+                            Kurchatova street, 57 <br>
+                            140165, Samarkand, Uzbekistan</address>
+                        </div>
+                        <div class="contacts__tel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13.3333 10H15.5556C15.5556 8.52658 14.9702 7.1135 13.9284 6.07163C12.8865 5.02976 11.4734 4.44444 10 4.44444V6.66667C10.8841 6.66667 11.7319 7.01786 12.357 7.64298C12.9821 8.2681 13.3333 9.11595 13.3333 10ZM17.7778 10H20C20 4.44444 15.5222 0 10 0V2.22222C14.2889 2.22222 17.7778 5.7 17.7778 10ZM18.8889 13.8889C17.5 13.8889 16.1667 13.6667 14.9222 13.2556C14.5333 13.1333 14.1 13.2222 13.7889 13.5333L11.3444 15.9778C8.2 14.3778 5.62222 11.8 4.02222 8.65556L6.46667 6.21111C6.77778 5.9 6.86667 5.46667 6.74444 5.07778C6.33333 3.83333 6.11111 2.5 6.11111 1.11111C6.11111 0.816426 5.99405 0.533811 5.78567 0.325437C5.5773 0.117063 5.29469 0 5 0H1.11111C0.816426 0 0.533811 0.117063 0.325437 0.325437C0.117063 0.533811 0 0.816426 0 1.11111C0 6.12076 1.99007 10.9252 5.53243 14.4676C9.07478 18.0099 13.8792 20 18.8889 20C19.1836 20 19.4662 19.8829 19.6746 19.6746C19.8829 19.4662 20 19.1836 20 18.8889V15C20 14.7053 19.8829 14.4227 19.6746 14.2143C19.4662 14.006 19.1836 13.8889 18.8889 13.8889Z" fill="white"/>
+                            </svg>
+                            <a href=”tel:+998883999985”>+998 88 399 99 85</a>
+                        </div>
+                        <button class="contacts__btn-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="white"/>
+                            </svg>
+                            <span>Get location</span>
+                        </button>
+                    </div>
+                    <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6142.948612212497!2d66.953767!3d39.661544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d18dfd0d91fa3%3A0x1be231430c75ad26!2zS3VyY2hhdG92IFN0ci4sIFNhbWFycWFuZCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1696274063229!5m2!1sru!2sru" width="715" height="260" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contacts__item">
+                <div class="contacts__data">
+                    <div class="contacts__branch contacts__branch_primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none">
+                            <path d="M8 5.21415C8.75776 5.21415 9.48449 5.51517 10.0203 6.05098C10.5561 6.5868 10.8571 7.31353 10.8571 8.07129C10.8571 8.4465 10.7832 8.81803 10.6397 9.16467C10.4961 9.51132 10.2856 9.82628 10.0203 10.0916C9.755 10.3569 9.44003 10.5674 9.09338 10.7109C8.74674 10.8545 8.37521 10.9284 8 10.9284C7.24224 10.9284 6.51551 10.6274 5.9797 10.0916C5.44388 9.55578 5.14286 8.82905 5.14286 8.07129C5.14286 7.31353 5.44388 6.5868 5.9797 6.05098C6.51551 5.51517 7.24224 5.21415 8 5.21415ZM8 0.0712891C10.1217 0.0712891 12.1566 0.914144 13.6569 2.41443C15.1571 3.91473 16 5.94956 16 8.07129C16 14.0713 8 22.9284 8 22.9284C8 22.9284 0 14.0713 0 8.07129C0 5.94956 0.842855 3.91473 2.34315 2.41443C3.84344 0.914144 5.87827 0.0712891 8 0.0712891ZM8 2.357C6.48448 2.357 5.03103 2.95904 3.95939 4.03068C2.88775 5.10232 2.28571 6.55577 2.28571 8.07129C2.28571 9.21415 2.28571 11.4999 8 19.1684C13.7143 11.4999 13.7143 9.21415 13.7143 8.07129C13.7143 6.55577 13.1122 5.10232 12.0406 4.03068C10.969 2.95904 9.51552 2.357 8 2.357Z" fill="url(#paint0_linear_108_223)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_108_223" x1="16" y1="11.4999" x2="0.266366" y2="11.4999" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0181EF"/>
+                                <stop offset="1" stop-color="#00BCF9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Germany branch</span>
+                    </div>
+                    <div class="contacts__address contacts__address_primary">
+                        <address>“Alexander Brosch Transporte” <br>
+                            DE 59192, Am Schlagbaum 28 <br>
+                            Bergkamen, Germany</address>
+                    </div>
+                    <div class="contacts__tel contacts__tel_primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M13.3333 10H15.5556C15.5556 8.52658 14.9702 7.1135 13.9284 6.07163C12.8865 5.02976 11.4734 4.44444 10 4.44444V6.66667C10.8841 6.66667 11.7319 7.01786 12.357 7.64298C12.9821 8.2681 13.3333 9.11595 13.3333 10ZM17.7778 10H20C20 4.44444 15.5222 0 10 0V2.22222C14.2889 2.22222 17.7778 5.7 17.7778 10ZM18.8889 13.8889C17.5 13.8889 16.1667 13.6667 14.9222 13.2556C14.5333 13.1333 14.1 13.2222 13.7889 13.5333L11.3444 15.9778C8.2 14.3778 5.62222 11.8 4.02222 8.65556L6.46667 6.21111C6.77778 5.9 6.86667 5.46667 6.74444 5.07778C6.33333 3.83333 6.11111 2.5 6.11111 1.11111C6.11111 0.816426 5.99405 0.533811 5.78567 0.325437C5.5773 0.117063 5.29469 0 5 0H1.11111C0.816426 0 0.533811 0.117063 0.325437 0.325437C0.117063 0.533811 0 0.816426 0 1.11111C0 6.12076 1.99007 10.9252 5.53243 14.4676C9.07478 18.0099 13.8792 20 18.8889 20C19.1836 20 19.4662 19.8829 19.6746 19.6746C19.8829 19.4662 20 19.1836 20 18.8889V15C20 14.7053 19.8829 14.4227 19.6746 14.2143C19.4662 14.006 19.1836 13.8889 18.8889 13.8889Z" fill="url(#paint0_linear_108_288)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_108_288" x1="20" y1="10" x2="0.332958" y2="10" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0181EF"/>
+                            <stop offset="1" stop-color="#00BCF9"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                        <a href=”tel:+4915110009829”>+4915110009829  or  +491607828439</a>
+                    </div>
+                    <button class="contacts__btn-location contacts__btn-location_primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M11.488 10.1C11.552 9.572 11.6 9.044 11.6 8.5C11.6 7.956 11.552 7.428 11.488 6.9H14.192C14.32 7.412 14.4 7.948 14.4 8.5C14.4 9.052 14.32 9.588 14.192 10.1M10.072 14.548C10.552 13.66 10.92 12.7 11.176 11.7H13.536C12.768 13.02 11.544 14.044 10.072 14.548ZM9.872 10.1H6.128C6.048 9.572 6 9.044 6 8.5C6 7.956 6.048 7.42 6.128 6.9H9.872C9.944 7.42 10 7.956 10 8.5C10 9.044 9.944 9.572 9.872 10.1ZM8 14.868C7.336 13.908 6.8 12.844 6.472 11.7H9.528C9.2 12.844 8.664 13.908 8 14.868ZM4.8 5.3H2.464C3.224 3.972 4.456 2.948 5.92 2.452C5.44 3.34 5.08 4.3 4.8 5.3ZM2.464 11.7H4.8C5.08 12.7 5.44 13.66 5.92 14.548C4.456 14.044 3.224 13.02 2.464 11.7ZM1.808 10.1C1.68 9.588 1.6 9.052 1.6 8.5C1.6 7.948 1.68 7.412 1.808 6.9H4.512C4.448 7.428 4.4 7.956 4.4 8.5C4.4 9.044 4.448 9.572 4.512 10.1M8 2.124C8.664 3.084 9.2 4.156 9.528 5.3H6.472C6.8 4.156 7.336 3.084 8 2.124ZM13.536 5.3H11.176C10.92 4.3 10.552 3.34 10.072 2.452C11.544 2.956 12.768 3.972 13.536 5.3ZM8 0.5C3.576 0.5 0 4.1 0 8.5C0 10.6217 0.842855 12.6566 2.34315 14.1569C3.08601 14.8997 3.96793 15.489 4.93853 15.891C5.90914 16.2931 6.94943 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 7.44943 15.7931 6.40914 15.391 5.43853C14.989 4.46793 14.3997 3.58601 13.6569 2.84315C12.914 2.10028 12.0321 1.511 11.0615 1.10896C10.0909 0.706926 9.05058 0.5 8 0.5Z" fill="url(#paint0_linear_502_138)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_502_138" x1="16" y1="8.5" x2="0.266366" y2="8.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0181EF"/>
+                            <stop offset="1" stop-color="#00BCF9"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Get location</span>
+                    </button>
+                </div>
+                <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.757849099008!2d7.652420076224739!3d51.627644801912446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b90da16f535989%3A0x97c15072af8406c8!2zQW0gU2NobGFnYmF1bSAyOCwgNTkxOTIgQmVyZ2thbWVuLCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1696389957178!5m2!1sru!2sru" width="715" height="260" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            
+        </div>
+        </div>  
+                
+        
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo"><img src="/assets/Logo_footer-d4dad515.svg" alt=""></div>
+            <div class="footer__wrapper">
+                <nav class="footer__nav">
+                    <ul>
+                        <li>
+                            Company
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#conditions">Terms & Conditions</a></li>
+                                <li><a href="#contacts">Contacts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__social-title"><h3>Social Media</h3></div>
+                    <div class="footer__social-href">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_110_393)">
+                                <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_110_393">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_110_407)">
+                                <path d="M10 1.80078C12.6719 1.80078 12.9883 1.8125 14.0391 1.85937C15.0156 1.90234 15.543 2.06641 15.8945 2.20313C16.3594 2.38281 16.6953 2.60156 17.043 2.94922C17.3945 3.30078 17.6094 3.63281 17.7891 4.09766C17.9258 4.44922 18.0898 4.98047 18.1328 5.95312C18.1797 7.00781 18.1914 7.32422 18.1914 9.99219C18.1914 12.6641 18.1797 12.9805 18.1328 14.0313C18.0898 15.0078 17.9258 15.5352 17.7891 15.8867C17.6094 16.3516 17.3906 16.6875 17.043 17.0352C16.6914 17.3867 16.3594 17.6016 15.8945 17.7813C15.543 17.918 15.0117 18.082 14.0391 18.125C12.9844 18.1719 12.668 18.1836 10 18.1836C7.32813 18.1836 7.01172 18.1719 5.96094 18.125C4.98438 18.082 4.45703 17.918 4.10547 17.7813C3.64063 17.6016 3.30469 17.3828 2.95703 17.0352C2.60547 16.6836 2.39063 16.3516 2.21094 15.8867C2.07422 15.5352 1.91016 15.0039 1.86719 14.0313C1.82031 12.9766 1.80859 12.6602 1.80859 9.99219C1.80859 7.32031 1.82031 7.00391 1.86719 5.95312C1.91016 4.97656 2.07422 4.44922 2.21094 4.09766C2.39063 3.63281 2.60938 3.29688 2.95703 2.94922C3.30859 2.59766 3.64063 2.38281 4.10547 2.20313C4.45703 2.06641 4.98828 1.90234 5.96094 1.85937C7.01172 1.8125 7.32813 1.80078 10 1.80078ZM10 0C7.28516 0 6.94531 0.0117187 5.87891 0.0585938C4.81641 0.105469 4.08594 0.277344 3.45313 0.523438C2.79297 0.78125 2.23438 1.12109 1.67969 1.67969C1.12109 2.23438 0.78125 2.79297 0.523438 3.44922C0.277344 4.08594 0.105469 4.8125 0.0585938 5.875C0.0117188 6.94531 0 7.28516 0 10C0 12.7148 0.0117188 13.0547 0.0585938 14.1211C0.105469 15.1836 0.277344 15.9141 0.523438 16.5469C0.78125 17.207 1.12109 17.7656 1.67969 18.3203C2.23438 18.875 2.79297 19.2188 3.44922 19.4727C4.08594 19.7188 4.8125 19.8906 5.875 19.9375C6.94141 19.9844 7.28125 19.9961 9.99609 19.9961C12.7109 19.9961 13.0508 19.9844 14.1172 19.9375C15.1797 19.8906 15.9102 19.7188 16.543 19.4727C17.1992 19.2188 17.7578 18.875 18.3125 18.3203C18.8672 17.7656 19.2109 17.207 19.4648 16.5508C19.7109 15.9141 19.8828 15.1875 19.9297 14.125C19.9766 13.0586 19.9883 12.7188 19.9883 10.0039C19.9883 7.28906 19.9766 6.94922 19.9297 5.88281C19.8828 4.82031 19.7109 4.08984 19.4648 3.45703C19.2188 2.79297 18.8789 2.23438 18.3203 1.67969C17.7656 1.125 17.207 0.78125 16.5508 0.527344C15.9141 0.28125 15.1875 0.109375 14.125 0.0625C13.0547 0.0117188 12.7148 0 10 0Z" fill="white"/>
+                                <path d="M10 4.86328C7.16406 4.86328 4.86328 7.16406 4.86328 10C4.86328 12.8359 7.16406 15.1367 10 15.1367C12.8359 15.1367 15.1367 12.8359 15.1367 10C15.1367 7.16406 12.8359 4.86328 10 4.86328ZM10 13.332C8.16016 13.332 6.66797 11.8398 6.66797 10C6.66797 8.16016 8.16016 6.66797 10 6.66797C11.8398 6.66797 13.332 8.16016 13.332 10C13.332 11.8398 11.8398 13.332 10 13.332Z" fill="white"/>
+                                <path d="M16.5391 4.66016C16.5391 5.32422 16 5.85938 15.3398 5.85938C14.6758 5.85938 14.1406 5.32031 14.1406 4.66016C14.1406 3.99609 14.6797 3.46094 15.3398 3.46094C16 3.46094 16.5391 4 16.5391 4.66016Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_110_407">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_110_422)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM10.3584 7.38244C9.38571 7.787 7.44178 8.62433 4.52658 9.89443C4.05319 10.0827 3.80521 10.2668 3.78264 10.4469C3.74449 10.7512 4.12559 10.8711 4.64456 11.0343C4.71515 11.0565 4.78829 11.0795 4.86328 11.1038C5.37386 11.2698 6.06069 11.464 6.41774 11.4717C6.74162 11.4787 7.10311 11.3452 7.5022 11.0711C10.226 9.2325 11.632 8.30317 11.7203 8.28314C11.7825 8.26901 11.8688 8.25123 11.9273 8.3032C11.9858 8.35518 11.98 8.4536 11.9738 8.48C11.9361 8.64095 10.4401 10.0317 9.66593 10.7515C9.42459 10.9759 9.25339 11.135 9.2184 11.1714C9.14 11.2528 9.06011 11.3298 8.98332 11.4038C8.50897 11.8611 8.15326 12.204 9.00301 12.764C9.41137 13.0331 9.73814 13.2556 10.0641 13.4776C10.4201 13.7201 10.7752 13.9619 11.2347 14.2631C11.3517 14.3398 11.4635 14.4195 11.5724 14.4971C11.9867 14.7925 12.359 15.0578 12.8188 15.0155C13.086 14.9909 13.3621 14.7397 13.5022 13.9903C13.8335 12.2193 14.4847 8.38205 14.6352 6.80081C14.6484 6.66227 14.6318 6.48498 14.6185 6.40715C14.6051 6.32931 14.5773 6.21842 14.4761 6.13633C14.3563 6.03911 14.1714 6.01861 14.0886 6.02007C13.7125 6.0267 13.1355 6.22735 10.3584 7.38244Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_110_422">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_110_472)">
+                                <path d="M0 20L1.41356 14.8669C0.539637 13.3603 0.0811843 11.654 0.0859598 9.9097C0.0859598 4.44392 4.55587 0 10.043 0C12.7077 0 15.2101 1.03137 17.0869 2.90399C18.9685 4.77662 20.0048 7.26711 20 9.91445C20 15.3802 15.5301 19.8242 10.0382 19.8242H10.0334C8.36676 19.8242 6.72874 19.4059 5.2722 18.6169L0 20ZM5.52531 16.8251L5.82617 17.0057C7.09646 17.7567 8.553 18.1511 10.0382 18.1559H10.043C14.6036 18.1559 18.319 14.4629 18.319 9.9192C18.319 7.71863 17.4594 5.65114 15.8978 4.09221C14.3362 2.53327 12.254 1.67776 10.043 1.67776C5.48233 1.673 1.76695 5.36597 1.76695 9.9097C1.76695 11.4639 2.20153 12.98 3.03247 14.2918L3.22827 14.6055L2.39255 17.6426L5.52531 16.8251Z" fill="white"/>
+                                <path d="M0 20L1.41356 14.8669C0.539637 13.3603 0.0811843 11.654 0.0859598 9.9097C0.0859598 4.44392 4.55587 0 10.043 0C12.7077 0 15.2101 1.03137 17.0869 2.90399C18.9685 4.77662 20.0048 7.26711 20 9.91445C20 15.3802 15.5301 19.8242 10.0382 19.8242H10.0334C8.36676 19.8242 6.72874 19.4059 5.2722 18.6169L0 20ZM5.52531 16.8251L5.82617 17.0057C7.09646 17.7567 8.553 18.1511 10.0382 18.1559H10.043C14.6036 18.1559 18.319 14.4629 18.319 9.9192C18.319 7.71863 17.4594 5.65114 15.8978 4.09221C14.3362 2.53327 12.254 1.67776 10.043 1.67776C5.48233 1.673 1.76695 5.36597 1.76695 9.9097C1.76695 11.4639 2.20153 12.98 3.03247 14.2918L3.22827 14.6055L2.39255 17.6426L5.52531 16.8251Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55508 5.76552C7.36884 5.35202 7.17304 5.34251 6.99634 5.33776C6.85308 5.33301 6.68593 5.33301 6.51879 5.33301C6.35165 5.33301 6.08422 5.39479 5.85499 5.64194C5.62576 5.88909 4.98584 6.48795 4.98584 7.70943C4.98584 8.92616 5.87887 10.1049 6.00303 10.2712C6.1272 10.4376 7.727 13.0184 10.2533 14.0117C12.3545 14.8387 12.7843 14.6724 13.238 14.6296C13.6917 14.5868 14.7088 14.0307 14.919 13.4509C15.1243 12.871 15.1243 12.3767 15.0622 12.2722C15.0002 12.1676 14.833 12.1058 14.5847 11.9822C14.3364 11.8587 13.1138 11.2598 12.8846 11.1743C12.6554 11.0935 12.4882 11.0507 12.3259 11.2978C12.1587 11.545 11.6812 12.1011 11.5379 12.2674C11.3946 12.4338 11.2466 12.4528 10.9983 12.3292C10.7499 12.2056 9.94763 11.9442 8.9973 11.0982C8.25709 10.4423 7.75566 9.62959 7.61239 9.38244C7.46912 9.13529 7.59806 9.00221 7.72223 8.87864C7.83206 8.76932 7.97056 8.58871 8.09472 8.44613C8.21888 8.30354 8.26186 8.19898 8.34305 8.03263C8.42423 7.86628 8.38603 7.72369 8.32395 7.60012C8.26186 7.4813 7.77476 6.25506 7.55508 5.76552Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_110_472">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Whatsapp</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <g clip-path="url(#clip0_110_494)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 9.20517C17.9999 8.56699 17.9415 7.95335 17.8329 7.36426H9.18359V10.8456H14.1261C13.9132 11.9706 13.2662 12.9238 12.2935 13.562V15.8202H15.2615C16.9981 14.2534 17.9999 11.9461 17.9999 9.20517Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.18392 18C11.6635 18 13.7424 17.1941 15.2618 15.8195L12.2938 13.5613C11.4715 14.1013 10.4195 14.4204 9.18392 14.4204C6.79199 14.4204 4.7674 12.8372 4.04523 10.71H0.977051V13.0418C2.48818 15.9831 5.59393 18 9.18392 18Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.04499 10.7108C3.86132 10.1708 3.75696 9.59399 3.75696 9.0008C3.75696 8.40762 3.86132 7.8308 4.04499 7.2908V4.95898H0.976809C0.354824 6.17399 0 7.54853 0 9.0008C0 10.4531 0.354824 11.8276 0.976809 13.0426L4.04499 10.7108Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.18392 3.57955C10.5322 3.57955 11.7428 4.03364 12.6946 4.92546L15.3286 2.34409C13.7382 0.891819 11.6593 0 9.18392 0C5.59393 0 2.48818 2.01682 0.977051 4.95818L4.04523 7.29C4.7674 5.16273 6.79199 3.57955 9.18392 3.57955Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_110_494">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Gmail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyrights">All copyrights are reserved © 2023</div>
+        </div>
+    </footer>
+    
+    
+</body>
 </html>
