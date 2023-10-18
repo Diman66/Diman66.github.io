@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script type="module" crossorigin src="/assets/index-ffd0ced8.js"></script>
-  <link rel="stylesheet" href="/assets/index-51e95d23.css">
+  <script type="module" crossorigin src="/assets/index-d07e14cf.js"></script>
+  <link rel="stylesheet" href="/assets/index-077e0c3f.css">
 </head>
 <body>
     <header class="header">
@@ -20,16 +20,14 @@
                     </div>
                     <div class="header__tagline">разработка премиум сайтов</div>
                     <div class="header__tel">
-                        <a href="tel:+79999999999" >+7 999 999 99 99</a>
-                        <span>Перезвонить вам?</span>
+                        <a href="tel:+79997750822">+7 999 775 0822</a>
+                        <button class="btnOpenrecall" >Перезвонить вам?</button>
                     </div>
                     <div class="header__menu">
                         <div class="header__burger">
                             <div></div>
                             <div></div>
-                        </div>
-                        
-                        
+                        </div>  
                     </div>
                 </div>
                 
@@ -155,9 +153,10 @@
             </div>
             <nav class="menu__list">
                 <ul>
-                    <li class="active"><a href="#">тарифы</a></li>
-                    <li><a href="#">отзывы</a></li>
-                    <li><a href="#">контакты</a></li>
+                    <li><a href="#rates">тарифы</a></li>
+                    <li><a href="reviews">отзывы</a></li>
+                    <li><a href="#contacts">контакты</a></li>
+                    <li><a href="#team">наша команда</a></li>
                 </ul>
             </nav>
             <div class="menu__footer">
@@ -190,13 +189,13 @@
                     
                 </div>
                 <div class="menu__media">
-                    <!-- <div class="behance"></div> -->
-                    <div class="telegram"><a href=""></a></div>
+                    <!-- <div class="behance"><a href="https://www.behance.net/m416digital"></a></div> -->
+                    <div class="telegram"><a href="https://t.me/WebDevelopmentGodsBakery"></a></div>
                     <div class="viber"><a href=""></a></div>
-                    <div class="whatsapp"><a href=""></a></div>
+                    <div class="whatsapp"><a href="https://wa.me/79954812600"></a></div>
                 </div>
                 <div class="menu__tel">
-                    <a href="tel:+79997750822" >+7(962)888-77-58</a>
+                    <a href="tel:+79997750822">+7(962)888-77-58</a>
                 </div>
             </div>
         </div>
@@ -312,7 +311,7 @@
         <div class="shape"><img src="/assets/shape_2-27d0bc98.png" alt=""></div>    
     </section>
 
-    <section class="portfolio">
+    <!-- <section class="portfolio">
         <div class="container">
             <h2 class="title">С кем имели честь работать</h2>
             <h3 class="subtitle">Некоторые из наших работ</h3>
@@ -355,10 +354,10 @@
                 </div>
             </div>
         </div>
-        <div class="shape"><img src="/assets/shape_3-a73c519e.png" alt=""></div>  
-    </section>
+        <div class="shape"><img src="./src/img/shape_3.png" alt=""></div>  
+    </section> -->
 
-    <section class="rates">
+    <section id="rates" class="rates">
         <div class="container">
             <h2 class="title">Тарифы на разработку</h2>
             <h3 class="subtitle">Присмотритесь, выберете что нужно именно вам</h3>
@@ -465,7 +464,7 @@
         <div class="shape"><img src="/assets/shape_2-27d0bc98.png" alt=""></div>  
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <h2 class="title">Когда отношения дороже золота</h2>
             <h3 class="subtitle">Отзывы в телеграм</h3>
@@ -488,29 +487,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="content__selector selector">
-                        <div class="active"></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="content__navigation">
-                        <button class="prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
-                                <path d="M8.8335 1.3335L2.16683 8.00016L8.8335 14.6668" stroke="white" stroke-width="2"/>
-                            </svg></button>
-                        <button class="next active">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
-                                <path d="M1.1665 1.3335L7.83317 8.00016L1.1665 14.6668" stroke="white" stroke-width="2"/>
-                            </svg>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
         <div class="container">
             <h2 class="title">команда</h2>
             <h3 class="subtitle">Которая участвует в разработке</h3>
@@ -533,17 +515,17 @@
                         </div>
                     </div>    
                 </div>
-                <div class="team__wrapper-video">
+                <!-- <div class="team__wrapper-video">
                     <div class="card video">
                         <div class="video__button">
                             <button><span></span></button>
                         </div>
                     </div>
-                    <!-- <div class="selector">
+                    <div class="selector">
                         <div class="active"></div>
                         <div></div>
-                    </div> -->
-                    <!-- <div class="content__navigation">
+                    </div>
+                    <div class="content__navigation">
                         <button class="prev">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
                                 <path d="M8.8335 1.3335L2.16683 8.00016L8.8335 14.6668" stroke="white" stroke-width="2"/>
@@ -553,8 +535,8 @@
                                 <path d="M1.1665 1.3335L7.83317 8.00016L1.1665 14.6668" stroke="white" stroke-width="2"/>
                             </svg>
                         </button>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
                 
             </div>
             
@@ -631,7 +613,7 @@
         <div class="shape"><img src="/assets/shape_3-a73c519e.png" alt=""></div>  
     </section>
 
-    <section class="media">
+    <section id="contacts" class="media">
         <div class="container">
             <h2 class="title">Остались интересующие вопросы?!</h2>
             <h3 class="subtitle">“Задайте их прямо сейчас руководителю отдела маркетинга</h3>
@@ -647,7 +629,7 @@
                           </clipPath>
                         </defs>
                     </svg>
-                    <a href="#">
+                    <a href="https://t.me/WebDevelopmentGodsBakery">
                         <span>telegram</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                             <path d="M1 22L22 1M22 1H1M22 1V22" stroke="#A200FF"/>
@@ -658,7 +640,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3686 4.93057C25.0832 5.11313 28.5446 6.64496 31.1884 9.29049C34.0084 12.1123 35.5606 15.8631 35.5591 19.852C35.5557 28.0835 28.8546 34.781 20.6227 34.781C17.527 34.781 15.067 33.8299 13.4786 32.9639L5.56055 35.0399L7.67961 27.3037C6.3725 25.0397 5.68471 22.4715 5.68579 19.8402C5.68909 11.6089 12.3896 4.91211 20.6224 4.91211L21.3686 4.93057ZM13.8455 30.2612L14.2989 30.5301C16.205 31.6607 18.3898 32.2589 20.6176 32.2597H20.6226C27.4652 32.2597 33.0344 26.6932 33.0371 19.8512C33.0384 16.5357 31.7483 13.4181 29.4044 11.0727C27.0605 8.72714 23.9435 7.43468 20.6275 7.4336C13.7796 7.4336 8.2104 12.9996 8.20767 19.8411C8.20674 22.1857 8.86306 24.4691 10.1058 26.4447L10.401 26.9142L9.14681 31.4931L13.8455 30.2612ZM28.1475 23.4021C28.0542 23.2464 27.8055 23.1531 27.4322 22.9664C27.059 22.7797 25.2242 21.8773 24.8821 21.7527C24.54 21.6283 24.2911 21.5662 24.0424 21.9395C23.7936 22.3129 23.0784 23.1531 22.8606 23.4021C22.6429 23.6511 22.4252 23.6822 22.0521 23.4955C21.6788 23.3088 20.4763 22.9148 19.0508 21.644C17.9413 20.6548 17.1922 19.4333 16.9745 19.0599C16.7569 18.6865 16.9513 18.4845 17.1381 18.2986C17.3061 18.1314 17.5114 17.8629 17.698 17.6451C17.8846 17.4273 17.9468 17.2716 18.0712 17.0227C18.1956 16.7737 18.1334 16.556 18.0401 16.3693C17.9468 16.1825 17.2004 14.3463 16.8894 13.5994C16.5864 12.8721 16.2787 12.9706 16.0497 12.9591C15.8322 12.9483 15.5832 12.9459 15.3344 12.9459C15.0856 12.9459 14.6813 13.0392 14.3392 13.4128C13.9971 13.7861 13.0329 14.6887 13.0329 16.5247C13.0329 18.3609 14.3703 20.1345 14.5569 20.3835C14.7435 20.6326 17.1886 24.4002 20.9324 26.0161C21.8228 26.4005 22.518 26.63 23.06 26.8019C23.9541 27.0858 24.7677 27.0458 25.4108 26.9497C26.1278 26.8426 27.6189 26.0473 27.9298 25.1761C28.2408 24.3045 28.2408 23.5577 28.1475 23.4021Z" fill="#A200FF"/>
                         </svg>
-                    <a href="#">
+                    <a href="https://wa.me/79954812600">
                         <span>whatsapp</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                             <path d="M1 22L22 1M22 1H1M22 1V22" stroke="#A200FF"/>
@@ -673,7 +655,7 @@
                         <path d="M23.4145 14.7467C23.4145 12.1281 22.5989 10.0676 21.0535 8.56518C19.5081 7.06272 17.5764 6.29004 15.2583 6.29004" stroke="#A200FF" stroke-width="0.827176" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M16.7177 18.7382C16.7177 18.7382 17.3186 18.7811 17.6191 18.3948L18.2201 17.6221C18.5205 17.2358 19.2073 16.9782 19.9371 17.3645C20.3234 17.5792 21.0102 18.0084 21.4395 18.3518C21.9117 18.6952 22.856 19.4679 22.856 19.4679C23.3282 19.8542 23.414 20.4123 23.1136 21.0132C22.8131 21.5712 22.3838 22.0864 21.8258 22.5585C21.3965 22.9449 20.9673 23.1166 20.538 23.2024H20.3663C20.1946 23.2024 19.98 23.1595 19.8083 23.1166C19.1644 22.9449 18.0913 22.4727 16.2455 21.4854C15.0865 20.8415 14.0992 20.1547 13.2836 19.5108C12.8544 19.1674 12.3822 18.7811 11.9529 18.3089L11.7812 18.1372C11.309 17.665 10.9227 17.2358 10.5793 16.8065C9.93541 15.9909 9.2486 15.0036 8.60472 13.8446C7.61743 12.0418 7.14525 10.9686 6.97355 10.2818C6.93063 10.1101 6.8877 9.93842 6.8877 9.72379V9.55208C6.93062 9.12283 7.14525 8.69357 7.53158 8.26432C8.00376 7.74921 8.51887 7.31995 9.0769 6.97655C9.67786 6.67607 10.2359 6.76192 10.6222 7.2341C10.6222 7.2341 11.3949 8.17847 11.7383 8.65066C12.0388 9.07991 12.468 9.76672 12.7256 10.1531C13.1119 10.8399 12.8544 11.5696 12.5109 11.8701L11.7383 12.471C11.352 12.7715 11.3949 13.3725 11.3949 13.3725C11.3949 13.3725 12.468 17.6221 16.7177 18.7382Z" fill="#A200FF"/>
                     </svg>
-                    <a href="#">
+                    <a href="viber://add?number=79997750822">
                         <span>viber</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                             <path d="M1 22L22 1M22 1H1M22 1V22" stroke="#A200FF"/>
@@ -700,7 +682,7 @@
                           </clipPath>
                         </defs>
                     </svg>
-                    <a href="#">
+                    <a href="https://studiom416.com">
                         <span>Наш 
                             основной сайт</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
@@ -778,7 +760,7 @@
             <div class="popUpReview__footer">
                 <div class="footerBtn">
                     <button class="popUpReview__body-btn" type="submit">Перейти в телеграм 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 41 41" fill="none">
                             <g clip-path="url(#clip0_424_734)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.610352 0.5H40.6104V40.5H0.610352V0.5ZM21.4752 15.5092C19.6839 16.2543 16.1039 17.7963 10.7352 20.1354C9.86345 20.4821 9.40677 20.8212 9.3652 21.1528C9.29494 21.7133 9.99679 21.934 10.9525 22.2345C11.0825 22.2754 11.2172 22.3177 11.3553 22.3626C12.2956 22.6683 13.5605 23.0259 14.2181 23.0401C14.8145 23.053 15.4802 22.8071 16.2152 22.3024C21.2314 18.9163 23.8207 17.2049 23.9833 17.168C24.098 17.1419 24.2569 17.1092 24.3646 17.2049C24.4723 17.3006 24.4617 17.4819 24.4503 17.5305C24.3807 17.8269 21.6257 20.3882 20.2 21.7137C19.7555 22.1269 19.4402 22.42 19.3758 22.487C19.2314 22.6369 19.0843 22.7788 18.9429 22.9151C18.0693 23.7572 17.4142 24.3887 18.9791 25.42C19.7312 25.9156 20.333 26.3254 20.9333 26.7342C21.589 27.1807 22.2429 27.6261 23.089 28.1807C23.3046 28.322 23.5105 28.4688 23.711 28.6118C24.474 29.1557 25.1595 29.6444 26.0064 29.5665C26.4985 29.5212 27.0068 29.0585 27.265 27.6784C27.8751 24.4169 29.0743 17.3501 29.3515 14.4381C29.3757 14.1829 29.3452 13.8564 29.3207 13.7131C29.2961 13.5698 29.2449 13.3655 29.0586 13.2144C28.8379 13.0353 28.4973 12.9976 28.3449 13.0001C27.6523 13.0125 26.5895 13.382 21.4752 15.5092Z" fill="#A200FF"/>
                             </g>
@@ -791,7 +773,34 @@
                     </button>
                 </div>
             </div>
-            <button class="popUpForm__close" id="btnClosePopUpReview" class="btnClosePopUp">
+            <button class="popUpForm__close btnClosePopUp" id="btnClosePopUpReview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.93934 2.43934C2.52513 1.85355 3.47487 1.85355 4.06066 2.43934L12 10.3787L19.9393 2.43934C20.5251 1.85355 21.4749 1.85355 22.0607 2.43934C22.6464 3.02513 22.6464 3.97487 22.0607 4.56066L14.1213 12.5L22.0607 20.4393C22.6464 21.0251 22.6464 21.9749 22.0607 22.5607C21.4749 23.1464 20.5251 23.1464 19.9393 22.5607L12 14.6213L4.06066 22.5607C3.47487 23.1464 2.52513 23.1464 1.93934 22.5607C1.35355 21.9749 1.35355 21.0251 1.93934 20.4393L9.87868 12.5L1.93934 4.56066C1.35355 3.97487 1.35355 3.02513 1.93934 2.43934Z" fill="white" fill-opacity="0.7"/>
+              </svg>
+            </button>
+        </div>
+        
+    </div>
+
+    <div id="popUpRecall" class="popUpForm">
+        <div class="popUpRecall__wrapper">
+            <div class="popUpRecall__header">Заполните данные</div>
+            <div class="popUpRecall__body">
+                <form action="#" class="popUpRecall__body-form">
+                    <div class="bodyForm">
+                        <input name="name" class="popUpRecall__body-name" placeholder="Имя">
+                        <input name="tel" class="popUpRecall__body-tel" placeholder="+7 999 999 99 99" type="tel">
+                        <textarea name="comment" class="popUpRecall__body-comment" id=""  rows="1" placeholder="Комментарий*"></textarea>
+                    </div>
+                    
+                    <div class="btnForm">
+                        <button class="popUpRecall__body-btn" type="submit">отправить форму</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="popUpRecall__footer"><div>Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь c <a href="#">политикой конфиденциальности</a></div></div>
+            <button class="popUpRecall__close btnClosePopUp" id="btnClosePopUpRecall">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.93934 2.43934C2.52513 1.85355 3.47487 1.85355 4.06066 2.43934L12 10.3787L19.9393 2.43934C20.5251 1.85355 21.4749 1.85355 22.0607 2.43934C22.6464 3.02513 22.6464 3.97487 22.0607 4.56066L14.1213 12.5L22.0607 20.4393C22.6464 21.0251 22.6464 21.9749 22.0607 22.5607C21.4749 23.1464 20.5251 23.1464 19.9393 22.5607L12 14.6213L4.06066 22.5607C3.47487 23.1464 2.52513 23.1464 1.93934 22.5607C1.35355 21.9749 1.35355 21.0251 1.93934 20.4393L9.87868 12.5L1.93934 4.56066C1.35355 3.97487 1.35355 3.02513 1.93934 2.43934Z" fill="white" fill-opacity="0.7"/>
               </svg>
