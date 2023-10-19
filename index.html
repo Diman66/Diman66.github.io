@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script type="module" crossorigin src="/assets/index-4179cc1c.js"></script>
+  <script type="module" crossorigin src="/assets/index-8b500853.js"></script>
   <link rel="stylesheet" href="/assets/index-0b151069.css">
 </head>
 <body>
@@ -736,20 +736,20 @@
       
     </div>
     
-    <div id="popUpForm" class="popUpForm">
+    <div id="popUpForm" class="popUpForm" method="post">
         <div class="popUpForm__wrapper">
             <div class="popUpForm__header">куда отправить материалы?!</div>
             <div class="popUpForm__body">
                 <form action="#" class="popUpForm__body-form">
                     <div class="bodyForm">
-                        <input name="name" class="popUpForm__body-name" placeholder="Имя">
-                        <input name="tel" class="popUpForm__body-tel" placeholder="+7 999 999 99 99" type="tel">
-                        <input name="email" type="text" class="popUpForm__body-email" placeholder="Адрес электронной почты" type="email">
-                        <select name="contact" id="" class="popUpForm__body-contact">
+                        <input name="name" class="popUpForm__body-name" placeholder="Имя" required>
+                        <input name="phone" class="popUpForm__body-tel" placeholder="+7 999 999 99 99" type="tel" required>
+                        <input name="email" type="text" class="popUpForm__body-email" placeholder="Адрес электронной почты" type="email" required>
+                        <select name="contact" id="" class="popUpForm__body-contact" required>
                             <option value="" selected disabled>Куда отправить материалы?</option>
-                            <option value="1" >email</option>
-                            <option value="2" >Viber</option>
-                            <option value="3" >WhatsApp</option>
+                            <option value="email" >email</option>
+                            <option value="Viber" >Viber</option>
+                            <option value="WhatsApp" >WhatsApp</option>
 
                         </select>
                         <div class="popUpForm__body-comment">
@@ -773,7 +773,7 @@
         
     </div>
 
-    <div id="popUpReview" class="popUpReview">
+    <!-- <div id="popUpReview" class="popUpReview">
         <div class="popUpReview__wrapper">
             <div class="popUpReview__header">Отзыв</div>
             <div class="popUpReview__body">
@@ -809,16 +809,16 @@
             </button>
         </div>
         
-    </div>
+    </div> -->
 
     <div id="popUpRecall" class="popUpForm">
         <div class="popUpRecall__wrapper">
             <div class="popUpRecall__header">перезвонить вам?</div>
             <div class="popUpRecall__body">
-                <form action="#" class="popUpRecall__body-form">
+                <form action="./php/index.php" class="popUpRecall__body-form" method="post">
                     <div class="bodyForm">
-                        <input name="name" class="popUpRecall__body-name" placeholder="Имя">
-                        <input name="tel" class="popUpRecall__body-tel" placeholder="+7 999 999 99 99" type="tel">
+                        <input name="name" class="popUpRecall__body-name" placeholder="Имя" required>
+                        <input name="phone" class="popUpRecall__body-tel" placeholder="+7 999 999 99 99" type="tel" required>
                         <div class="popUpRecall__body-comment">
                             <textarea name="comment" id=""  rows="1" placeholder="Комментарий*"></textarea>
                         </div>
